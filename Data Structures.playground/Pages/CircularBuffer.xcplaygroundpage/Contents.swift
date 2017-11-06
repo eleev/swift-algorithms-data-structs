@@ -1,5 +1,7 @@
 //: [Previous](@previous)
 
+import Foundation
+
 public struct CircularBuffer<T> {
     fileprivate var data: [T]
     fileprivate var head: Int = 0, tail: Int = 0
@@ -168,6 +170,23 @@ extension CircularBuffer: Sequence {
         
 }
 
+extension CircularBuffer: ExpressibleByArrayLiteral {
+    /// Constructs a circular buffer using an array literal.
+    public init(arrayLiteral elements: T...) {
+        self.init(elements, size: elements.count)
+    }
+}
+
+//: Usage
+
+var buffer: CircularBuffer = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+debugPrint("buffer: ", buffer)
+
+while true {
+    let random = Int(arc4random()) % (99 - 16) + 10
+    buffer.push(element: random)
+    debugPrint("buffer: ", buffer)
+}
 
 //: [Next](@next)
 
