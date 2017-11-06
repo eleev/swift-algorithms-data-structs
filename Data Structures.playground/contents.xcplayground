@@ -3,5 +3,6 @@
     <pages>
         <page name='Main'/>
         <page name='Stack'/>
+        <page name='CircularBuffer'/>
     </pages>
 </playground>
