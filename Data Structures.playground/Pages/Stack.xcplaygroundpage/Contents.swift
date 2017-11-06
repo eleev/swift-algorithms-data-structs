@@ -127,3 +127,5 @@ debugPrint("last removed element: ", lastElement)
 stack.push(element: 10)
 debugPrint("pushed 10: ", stack)
 
+//: [Next](@next)
+
