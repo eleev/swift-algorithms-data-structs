@@ -7,8 +7,7 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
 
 ## Contnet 
 - [About](#about)
-- [Data Structures](https://github.com/jVirus/iOS-Algo-Play-Book/tree/master/Data%20Structures.playground)
-  - [Stack](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/Data%20Structures.playground/Pages/Stack.xcplaygroundpage/Contents.swift)
+- [Data Structures](https://github.com/jVirus/iOS-Algo-Play-Book/tree/master/Data%20Structures.playground/Pages)
   - [Circular Buffer](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/Data%20Structures.playground/Pages/CircularBuffer.xcplaygroundpage/Contents.swift)
   - Queue (in development)
   - Linked List (in development)
