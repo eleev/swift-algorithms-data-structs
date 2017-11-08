@@ -29,6 +29,11 @@ public struct Queue<T> {
         data = [T]()
     }
     
+    public init<S: Sequence>(_ elements: S) where S.Iterator.Element == T {
+        data.append(contentsOf: elements)
+    }
+    
+    
     // MARK: - API methods 
     
     public mutating func dequeue() -> T? {
@@ -59,6 +64,25 @@ public struct Queue<T> {
 
 // MARK: - CustomStringConvertable and CustomStirngDebugConvertable protocols conformance
 
+extension Queue: CustomStringConvertible, CustomDebugStringConvertible {
+    
+    public var description: String {
+        return data.description
+    }
+    
+    public var debugDescription: String {
+        return data.description
+    }
+}
+
+// MARK: - ExpressibleByArrayLiteral protocol conformance
+
+extension Queue: ExpressibleByArrayLiteral {
+    
+    public init(arrayLiteral elements: T...) {
+        self.init(elements)
+    }
+}
 
 
 //: [Next](@next)
