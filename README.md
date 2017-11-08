@@ -18,8 +18,8 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
  - Heap (in development)
  - Graph (in development)
 
-##  Author 
+#  Author 
 `Astemir Eleev` - iOS Software Engineer
 
-## Licence 
+# Licence 
 THE PROJECT IS UNDER [MIT](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/LICENSE) LICENCE 
