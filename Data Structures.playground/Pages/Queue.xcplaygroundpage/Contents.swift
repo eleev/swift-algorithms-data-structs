@@ -61,6 +61,20 @@ public struct Queue<T> {
         return data.isEmpty
     }
     
+    // MARK: - Private methods
+    
+    private  func checkIndex(index: Int) throws {
+        if index < 0 || index > count {
+            throw QueueError.indexOutOfRange
+        }
+    }
+    
+}
+
+// MARK: - Custom error enum type declaration
+
+enum QueueError: Error {
+    case indexOutOfRange
 }
 
 // MARK: - CustomStringConvertable and CustomStirngDebugConvertable protocols conformance
@@ -99,6 +113,49 @@ extension Queue: Sequence {
         return AnyIterator(indexingIteratoer)
         
     }
+}
+
+// MARK: - MutableCollection protocol conformance
+
+extension Queue: MutableCollection {
+    
+    // MARK: - Core protocol conformance 
+    
+    public var startIndex: Int {
+        return 0
+    }
+    
+    public var endIndex: Int {
+        return count - 1
+    }
+    
+    public func index(after i: Int) -> Int {
+        return data.index(after: i)
+    }
+    
+    // MARK: - Subscript implementation
+    
+    public subscript(index: Int) -> T {
+        get {
+            checkHandledIndex(index: index)
+            return data[index]
+        }
+        set {
+            checkHandledIndex(index: index)
+            data[index] = newValue
+        }
+    }
+    
+    // MARK: - Utility method
+    
+    private func checkHandledIndex(index: Int) {
+        do {
+            checkIndex(index: index)
+        } catch {
+            fatalError(error.localizedDescription)
+        }
+    }
+    
 }
 
 
