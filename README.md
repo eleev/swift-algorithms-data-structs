@@ -24,7 +24,7 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
     - Quick 
     - Bubble
     - Heap
-  - Searching 
+  - Searching 
     - Binary 
     - Breadth First 
     - Moore String
