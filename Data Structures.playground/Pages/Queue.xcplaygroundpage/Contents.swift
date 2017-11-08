@@ -119,7 +119,7 @@ extension Queue: Sequence {
 
 extension Queue: MutableCollection {
     
-    // MARK: - Core protocol conformance 
+    // MARK: - Core protocol conformance
     
     public var startIndex: Int {
         return 0
