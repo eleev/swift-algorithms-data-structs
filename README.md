@@ -11,12 +11,23 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
   - [Stack](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/Data%20Structures.playground/Pages/Stack.xcplaygroundpage/Contents.swift)
   - [Circular Buffer](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/Data%20Structures.playground/Pages/CircularBuffer.xcplaygroundpage/Contents.swift)
   - [Queue](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/Data%20Structures.playground/Pages/Queue.xcplaygroundpage/Contents.swift)
-  - Proority Queue (in development)
-  - Linked List (in development)
-  - Trie (in development)
-  - Binary Search Trie (in development)
-  - Heap (in development)
-  - Graph (in development)
+  - Proority Queue
+  - Linked List
+  - Trie 
+  - Binary Search Trie
+  - Heap 
+  - Graph 
+- Algorithms
+  - Sorting
+    - Insertion
+    - Merge
+    - Quick 
+    - Bubble
+    - Heap
+  - Searching 
+    - Binary 
+    - Breadth First 
+    - Moore String
 
 #  Author 
 `Astemir Eleev` - iOS Software Engineer
