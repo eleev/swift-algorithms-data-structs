@@ -4,7 +4,7 @@ This is a Playground Book that contains examples of common Algorithms and Data S
  Here you can find the following list of data structures:
  - [Stack](Stack)
  - [Circular Buffer](CircularBuffer)
- - Queue (in development)
+ - [Queue](Queue)
  - Linked List (in development)
  */
 
