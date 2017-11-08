@@ -4,5 +4,6 @@
         <page name='Main'/>
         <page name='Stack'/>
         <page name='CircularBuffer'/>
+        <page name='Queue'/>
     </pages>
 </playground>
