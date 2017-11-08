@@ -13,21 +13,37 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
   - [Queue](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/Data%20Structures.playground/Pages/Queue.xcplaygroundpage/Contents.swift)
   - Proority Queue
   - Linked List
-  - Trie 
-  - Binary Search Trie
+  - Tree 
+  - Binary Tree
   - Heap 
   - Graph 
+  - Quad Tree
+  - Octree
 - Algorithms
-  - Sorting
+  - Sort
     - Insertion
     - Merge
     - Quick 
     - Bubble
     - Heap
-  - Searching 
+    - Shell
+  - Search 
     - Binary 
+    - Linear
     - Breadth First 
-    - Moore String
+  - String Search 
+    - Brute-Force
+    - Boyer-Moore 
+  - Graphs
+    - Dijkstra's shortest path algorithm
+    - Minimum Spanning Tree (unweighted tree)
+    - Minimum Spanning Tree
+    - Breadth-First Search (BFS)
+    - Depth-First Search (DFS)
+    - Shortest Path (unweighted tree)
+    
+  
+
 
 #  Author 
 `Astemir Eleev` - iOS Software Engineer
