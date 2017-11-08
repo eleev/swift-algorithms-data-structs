@@ -30,6 +30,7 @@ public struct Queue<T> {
     }
     
     public init<S: Sequence>(_ elements: S) where S.Iterator.Element == T {
+        self.init()
         data.append(contentsOf: elements)
     }
     
@@ -81,6 +82,22 @@ extension Queue: ExpressibleByArrayLiteral {
     
     public init(arrayLiteral elements: T...) {
         self.init(elements)
+    }
+}
+
+// MARK: - Sequnce protocol conformance
+
+extension Queue: Sequence {
+
+    public func makeIterator() -> AnyIterator<T> {
+        let indexedIterator = IndexingIterator(_elements: data.lazy)
+        return AnyIterator(indexedIterator)
+    }
+    
+    public func generate() -> AnyIterator<T> {
+        let indexingIteratoer = IndexingIterator(_elements: data.lazy)
+        return AnyIterator(indexingIteratoer)
+        
     }
 }
 
