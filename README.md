@@ -1,5 +1,5 @@
 # iOS-Algo-Play-Book
-This is a `Playground Book` that contains examples of common `Algorithms` and `Data Structures` implemented using the latest stable `Swift` programming language version. The development attempts to fully utilize `Standard Library` and `Protocol-Oriented` paradigm. The book provides visualizations using `SpriteKit` and `SceneKit` frameworks.
+This is a `Playground Book` that contains examples of common `Algorithms` and `Data Structures` implemented using the latest stable `Swift` programming language version. The development attempts to fully utilize `Standard Library` and `Protocol-Oriented` paradigm. The book provides visualizations using `SpriteKit` and `SceneKit` frameworks. 
 
 
 # About 
