@@ -13,6 +13,8 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
   - [Queue](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/Data%20Structures.playground/Pages/Queue.xcplaygroundpage/Contents.swift)
   - Priority Queue
   - Linked List
+  - Doubly Linked List
+  - Circular Linked List
   - Tree 
   - Binary Tree
   - Heap 
