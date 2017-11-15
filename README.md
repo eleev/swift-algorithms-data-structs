@@ -12,7 +12,7 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
   - [Circular Buffer](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/Data%20Structures.playground/Pages/CircularBuffer.xcplaygroundpage/Contents.swift)
   - [Queue](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/Data%20Structures.playground/Pages/Queue.xcplaygroundpage/Contents.swift)
   - Priority Queue
-  - Linked List
+  - [Linked List](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/Data%20Structures.playground/Pages/Linked%20List.xcplaygroundpage/Contents.swift)
   - Doubly Linked List
   - Circular Linked List
   - Tree 
