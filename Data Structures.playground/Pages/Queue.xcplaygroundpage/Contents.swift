@@ -150,7 +150,7 @@ extension Queue: MutableCollection {
     
     private func checkHandledIndex(index: Int) {
         do {
-            checkIndex(index: index)
+            try checkIndex(index: index)
         } catch {
             fatalError(error.localizedDescription)
         }
