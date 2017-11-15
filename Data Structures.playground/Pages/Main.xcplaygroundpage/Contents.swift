@@ -5,12 +5,16 @@ This is a Playground Book that contains examples of common Algorithms and Data S
  - [Stack](Stack)
  - [Circular Buffer](CircularBuffer)
  - [Queue](Queue)
- - Proority Queue (in development)
- - Linked List (in development)
- - Trie (in development)
- - Binary Search Trie (in development)
- - Heap (in development)
- - Graph (in development)
+ - Priority Queue
+ - Linked List
+ - Doubly Linked List
+ - Circular Linked List
+ - Tree
+ - Binary Tree
+ - Quad Tree
+ - Octree
+ - Heap
+ - Graph
  */
 
 //: [Next](@next)
