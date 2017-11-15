@@ -17,10 +17,10 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
   - Circular Linked List
   - Tree 
   - Binary Tree
-  - Heap 
-  - Graph 
   - Quad Tree
   - Octree
+  - Heap 
+  - Graph 
 - Algorithms
   - Sort
     - Insertion
