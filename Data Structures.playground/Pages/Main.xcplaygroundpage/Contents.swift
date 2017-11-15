@@ -6,7 +6,7 @@ This is a Playground Book that contains examples of common Algorithms and Data S
  - [Circular Buffer](CircularBuffer)
  - [Queue](Queue)
  - Priority Queue
- - Linked List
+ - [Linked List](LinkedList)
  - Doubly Linked List
  - Circular Linked List
  - Tree
