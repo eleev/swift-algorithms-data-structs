@@ -23,7 +23,7 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
   - Graph 
 - Algorithms
   - Sort
-    - Insertion
+    - [Insertion](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/Sort.playground/Pages/Insertion.xcplaygroundpage/Contents.swift)
     - Merge
     - Quick 
     - Bubble
