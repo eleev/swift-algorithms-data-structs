@@ -44,11 +44,10 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
     - Depth-First Search (DFS)
     - Shortest Path (unweighted tree)
     
-  
-
+ 
 
 #  Author 
-`Astemir Eleev` - iOS Software Engineer
+[Astemir Eleev](https://github.com/jVirus)
 
 # Licence 
 THE PROJECT IS UNDER [MIT](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/LICENSE) LICENCE 
