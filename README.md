@@ -24,7 +24,7 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
 - Algorithms
   - [Sort](https://github.com/jVirus/iOS-Algo-Play-Book/tree/master/Sort.playground/Pages)
     - [Insertion](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/Sort.playground/Pages/Insertion.xcplaygroundpage/Contents.swift)
-    - Merge
+    - [Merge](https://github.com/jVirus/ios-algorithms-book/blob/master/Sort.playground/Pages/Merge.xcplaygroundpage/Contents.swift)
     - Quick 
     - Bubble
     - Heap
