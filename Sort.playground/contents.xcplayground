@@ -5,5 +5,6 @@
         <page name='Merge'/>
         <page name='Quick-Hoare-Scheme'/>
         <page name='Quick-Lomuto-Scheme'/>
+        <page name='Bubble'/>
     </pages>
 </playground>
