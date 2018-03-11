@@ -33,7 +33,7 @@ extension Array where Element: Comparable {
 }
 
 
-// Usage:
+//: Usage
 
 var nums = [1, 5, 6, 3, 2, 7, 8, 5, 8, 4, 2, 9, 0]
 Array.quickSort(array: &nums, lowest: 0, highest: nums.count - 1)
