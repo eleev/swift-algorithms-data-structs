@@ -3,5 +3,6 @@
     <pages>
         <page name='Insertion'/>
         <page name='Merge'/>
+        <page name='Quick-Lomuto-Scheme'/>
     </pages>
 </playground>
