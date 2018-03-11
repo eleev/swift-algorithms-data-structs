@@ -25,7 +25,8 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
   - [Sort](https://github.com/jVirus/iOS-Algo-Play-Book/tree/master/Sort.playground/Pages)
     - [Insertion](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/Sort.playground/Pages/Insertion.xcplaygroundpage/Contents.swift)
     - [Merge](https://github.com/jVirus/ios-algorithms-book/blob/master/Sort.playground/Pages/Merge.xcplaygroundpage/Contents.swift)
-    - [Quick (Lomuto Partitioning Scheme)](https://github.com/jVirus/ios-algorithms-book/blob/master/Sort.playground/Pages/Quick-Lomuto-Scheme.xcplaygroundpage/Contents.swift)
+    - [Quick (Hoare's Partitioning Scheme)](https://github.com/jVirus/ios-algorithms-book/blob/master/Sort.playground/Pages/Quick-Hoare-Scheme.xcplaygroundpage/Contents.swift)
+    - [Quick (Lomuto's Partitioning Scheme)](https://github.com/jVirus/ios-algorithms-book/blob/master/Sort.playground/Pages/Quick-Lomuto-Scheme.xcplaygroundpage/Contents.swift)
     - Bubble
     - Heap
     - Shell
