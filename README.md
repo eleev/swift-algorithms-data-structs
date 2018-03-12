@@ -31,7 +31,7 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
     - Heap
     - Shell
   - Search 
-    - Binary 
+    - [Binary](https://github.com/jVirus/ios-algorithms-book/blob/master/Search.playground/Pages/Binary.xcplaygroundpage/Contents.swift)
     - Linear
     - Breadth First 
   - String Search 
