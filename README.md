@@ -30,7 +30,7 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
     - [Bubble](https://github.com/jVirus/ios-algorithms-book/blob/master/Sort.playground/Pages/Bubble.xcplaygroundpage/Contents.swift)
     - Heap
     - Shell
-  - Search 
+  - [Search](https://github.com/jVirus/ios-algorithms-book/tree/master/Search.playground)
     - [Binary](https://github.com/jVirus/ios-algorithms-book/blob/master/Search.playground/Pages/Binary.xcplaygroundpage/Contents.swift)
     - Linear
     - Breadth First 
