@@ -32,7 +32,7 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
     - Shell
   - [Search](https://github.com/jVirus/ios-algorithms-book/tree/master/Search.playground)
     - [Binary](https://github.com/jVirus/ios-algorithms-book/blob/master/Search.playground/Pages/Binary.xcplaygroundpage/Contents.swift)
-    - [Linear])(https://github.com/jVirus/ios-algorithms-book/blob/master/Search.playground/Pages/Linear.xcplaygroundpage/Contents.swift)
+    - [Linear](https://github.com/jVirus/ios-algorithms-book/blob/master/Search.playground/Pages/Linear.xcplaygroundpage/Contents.swift)
     - Breadth First 
   - String Search 
     - Brute-Force
