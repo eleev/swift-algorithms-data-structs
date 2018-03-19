@@ -32,10 +32,37 @@ extension String {
 
 //: Usage
 
-let string = "😄😂🤦‍♂️🤖🤯💩"
-let pattern = "😂"
+let string = "😄😂💩🤦‍♂️🤖🤯💩"
+let pattern = "💩"
 
 let index = string.indexOf(pattern)
-print("Found index for \(pattern): " , index)
+print("Found index for \(pattern): " , index as Any)
+
+
+
+/*:
+ Brute-Force string search implementation as String extension (using range(of:) method) which is much faster than the previous implementation:
+ */
+
+extension String {
+    
+    func indicesOf(_ string: String) -> [Int]? {
+        
+        var indices = [Int]()
+        var position = self.startIndex
+        
+        while let range = range(of: string, options: String.CompareOptions.caseInsensitive, range: position ..< self.endIndex, locale: nil) {
+            indices.append(distance(from: self.startIndex, to: range.lowerBound))
+            position = index(after: range.lowerBound)
+        }
+        
+        return indices
+    }
+}
+
+//: Usage:
+
+let indices = string.indicesOf(pattern)
+print("Found index for \(pattern): " , indices as Any)
 
 
