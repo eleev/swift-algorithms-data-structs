@@ -35,7 +35,7 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
     - [Linear](https://github.com/jVirus/ios-algorithms-book/blob/master/Search.playground/Pages/Linear.xcplaygroundpage/Contents.swift)
     - Breadth First 
   - [String Search](https://github.com/jVirus/ios-algorithms-book/tree/master/String%20Search.playground)
-    - Brute-Force
+    - [Brute-Force](https://github.com/jVirus/ios-algorithms-book/blob/master/String%20Search.playground/Contents.swift)
     - Boyer-Moore 
   - Graphs
     - Dijkstra's shortest path algorithm
