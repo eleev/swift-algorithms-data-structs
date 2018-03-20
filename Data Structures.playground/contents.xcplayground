@@ -6,5 +6,6 @@
         <page name='CircularBuffer'/>
         <page name='Queue'/>
         <page name='Linked List'/>
+        <page name='Tree'/>
     </pages>
 </playground>
