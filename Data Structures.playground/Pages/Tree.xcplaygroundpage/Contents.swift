@@ -39,6 +39,30 @@ class Node<T: Comparable> {
     
 }
 
+extension Node: CustomStringConvertible, CustomDebugStringConvertible {
+    
+    // MARK: - Overriden properties
+    
+    var description: String {
+        return prepareStringConvertable()
+    }
+    
+    var debugDescription: String {
+        return prepareStringConvertable()
+    }
+    
+    // MARK: - Methods
+    
+    func prepareStringConvertable() -> String {
+        var desc = "\(value)"
+        
+        if !children.isEmpty {
+            desc += " {" + children.map { $0.description }.joined(separator: ", ") + "}"
+        }
+        return desc
+    }
+}
+
 
 //: Usage
 
