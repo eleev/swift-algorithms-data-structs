@@ -2,13 +2,13 @@
 
 import Foundation
 
-class Node<T: Comparable> {
+class Node<T: Equatable> {
     
     // MARK: - Properties
     
     weak var parent: Node?
     var value: T
-    var children: [Node] = []
+    var children: [Node<T>] = []
     
     // MARK: - Initializers
     
@@ -29,7 +29,7 @@ class Node<T: Comparable> {
             return self
         }
         
-        children.forEach { child in
+        for child in children {
             if let foundChild = child.search(value: value) {
                 return foundChild
             }
@@ -76,5 +76,9 @@ nodeApple.insert(child: nodeBar)
 nodeBar.insert(child: nodeChair)
 
 print(nodeApple)
+
+
+let foundNode = nodeApple.search(value: "Bar")
+print(foundNode)
 
 //: [Next](@next)
