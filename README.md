@@ -1,9 +1,8 @@
 # ios-algorighms-book
-This is a `Playground Book` that contains examples of common `Algorithms` and `Data Structures` implemented using the latest stable `Swift` programming language version. The development attempts to fully utilize `Standard Library` and `Protocol-Oriented` paradigm. The book provides visualizations using `SpriteKit` and `SceneKit` frameworks. 
-
+This is a `Playground-based` project that contains examples of common `Algorithms` and `Data Structures` implemented using the latest stable version of `Swift`programming language. The development attempts to fully utilize `Standard Library` and `Protocol-Oriented` paradigm. The book provides visualizations using `SpriteKit` and `SceneKit` frameworks (in development). 
 
 # About 
-Each major section will be wrapped into a separete `.playground` file, meaning that `data structures` and `algorithms` will be separeted for convenient management. All the explanation and code contained in `.playground` files, so here you can find just a very general overview of the what is inside. Happy evolving 🤓:octocat:
+Each major section will be wrapped into a separete `.playground` file, meaning that `data structures` and `algorithms` will be separeted for convenient management. :octocat:
 
 ## Contnet 
 - [About](#about)
