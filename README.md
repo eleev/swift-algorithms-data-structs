@@ -14,12 +14,12 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
   - [Linked List](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/Data%20Structures.playground/Pages/Linked%20List.xcplaygroundpage/Contents.swift)
   - Doubly Linked List
   - Circular Linked List
-  - Tree 
+  - [Tree](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Pages/Tree.xcplaygroundpage/Contents.swift) 
   - Binary Tree
   - Quad Tree
   - Octree
-  - Heap 
-  - Graph 
+  - [Heap](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Pages/Heap.xcplaygroundpage/Contents.swift) 
+  - [Graph](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Pages/Graph.xcplaygroundpage/Contents.swift)
 - Algorithms
   - [Sort](https://github.com/jVirus/iOS-Algo-Play-Book/tree/master/Sort.playground/Pages)
     - [Insertion](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/Sort.playground/Pages/Insertion.xcplaygroundpage/Contents.swift)
