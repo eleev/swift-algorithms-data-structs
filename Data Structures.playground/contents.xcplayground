@@ -8,5 +8,6 @@
         <page name='Linked List'/>
         <page name='Tree'/>
         <page name='Graph'/>
+        <page name='Heap'/>
     </pages>
 </playground>
