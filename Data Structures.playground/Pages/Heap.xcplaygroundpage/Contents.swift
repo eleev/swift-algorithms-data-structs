@@ -2,7 +2,7 @@
 
 import Foundation
 
-public struct Heap<T> where T: Comparable, T: CustomStringConvertible {
+public struct Heap<T> where T: Comparable {
     
     // MARK: - Constants
     
@@ -212,7 +212,7 @@ extension Heap: ExpressibleByArrayLiteral {
 /*:
  Adds support for Sequence protocol. The Swift's runtime will call the makeIterator() method to initialize the for...in loop. All we need to do is to return some soft of iterator instance that conforms to IteratorProtocol. Iterator protocol allows us to return an iterator based on the type of elements out target type contains - in this particular case it is Stack.
  */
-extension Heap: Sequence {
+extension Heap: Sequence{
     
     public func makeIterator() -> AnyIterator<T> {
         let idexedIterator = IndexingIterator(_elements: self.nodes.lazy.reversed())
@@ -238,8 +238,19 @@ extension Heap {
 }
 
 
-//: Usage
+//  MARK: - Searching
+extension Heap where T: Equatable {
+    
+    /// Gets the index of a node from the Heap
+    ///
+    /// - Parameter node: is a Node of type T that is going to be searched
+    /// - Returns: is an index in Heap array
+    public func index(of node: T) -> Int? {
+        return nodes.index(where: { $0 == node })
+    }
+}
 
+//: Usage
 
 var maxHeap = Heap<Int>(order: >)
 maxHeap.insert(node: 1)
@@ -252,6 +263,8 @@ debugPrint(maxHeap)
 
 var heap: Heap = [3, 1, 4, 2, 7, 9, 8]
 debugPrint(heap)
+
+heap.index(of: 3)
 
 let sortedHeap = heap.sorted()
 debugPrint(sortedHeap)
