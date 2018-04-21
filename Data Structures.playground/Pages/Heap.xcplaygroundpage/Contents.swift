@@ -221,6 +221,22 @@ extension Heap: Sequence {
 }
 
 
+
+// MARK: - Heap Sort. Should be decomposed into separete file for sorting algorithms.
+// - Note that it is very similar to Selection sort approach. 
+extension Heap {
+    func sorted() -> [T] {
+        var heap = Heap(array: nodes, order: order)
+        
+        for index in self.nodes.indices.reversed() {
+            heap.nodes.swapAt(0, index)
+            heap.shiftDown(from: 0, until: index)
+        }
+        return heap.nodes
+    }
+}
+
+
 //: Usage
 
 
@@ -235,5 +251,8 @@ debugPrint(maxHeap)
 
 var heap: Heap = [3, 1, 4, 2, 7, 9, 8]
 debugPrint(heap)
+
+let sortedHeap = heap.sorted()
+debugPrint(sortedHeap)
 
 //: [Next](@next)
