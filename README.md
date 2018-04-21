@@ -27,7 +27,7 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
     - [Quick (Hoare's Partitioning Scheme)](https://github.com/jVirus/ios-algorithms-book/blob/master/Sort.playground/Pages/Quick-Hoare-Scheme.xcplaygroundpage/Contents.swift)
     - [Quick (Lomuto's Partitioning Scheme)](https://github.com/jVirus/ios-algorithms-book/blob/master/Sort.playground/Pages/Quick-Lomuto-Scheme.xcplaygroundpage/Contents.swift)
     - [Bubble](https://github.com/jVirus/ios-algorithms-book/blob/master/Sort.playground/Pages/Bubble.xcplaygroundpage/Contents.swift)
-    - Heap
+    - [Heap](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Pages/Heap.xcplaygroundpage/Contents.swift)
     - [Shell](https://github.com/jVirus/ios-algorithms-book/blob/master/Sort.playground/Pages/Shell.xcplaygroundpage/Contents.swift)
   - [Search](https://github.com/jVirus/ios-algorithms-book/tree/master/Search.playground/Pages)
     - [Binary](https://github.com/jVirus/ios-algorithms-book/blob/master/Search.playground/Pages/Binary.xcplaygroundpage/Contents.swift)
