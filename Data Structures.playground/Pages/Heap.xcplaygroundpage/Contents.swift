@@ -223,7 +223,8 @@ extension Heap: Sequence {
 
 
 // MARK: - Heap Sort. Should be decomposed into separete file for sorting algorithms.
-// - Note that it is very similar to Selection sort approach. 
+// - Note that it is very similar to Selection sort approach.
+// - Complexity of the sorting algorithms is O(n log n) in best, worst and average cases. The heap is traversed once (which is a list and is O(n)) and then every time the elements are swapped, a shift down operation is performed which is O(log n). As a result we have O(n log n) coomplexity.
 extension Heap {
     func sorted() -> [T] {
         var heap = Heap(array: nodes, order: order)
