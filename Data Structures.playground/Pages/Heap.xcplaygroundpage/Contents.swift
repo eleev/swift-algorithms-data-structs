@@ -164,53 +164,48 @@ extension Heap: CustomStringConvertible, CustomDebugStringConvertible {
     }
     
     public var debugDescription: String {
-//        prepareDebugPrint()
-        return nodes.debugDescription
+        return prettyPrint()
     }
+
+    // MARK: - Helpers
     
-    /*
-    func prepareDebugPrint() -> String {
-        var innerLength = 1
-        var start = 0
-        var end = innerLength
-    
+    private func prettyPrint() -> String {
+        var out = String()
+        var iterator = 2
         
-        for var index in 0..<count {
-
-//            Swift.print(innerLength)
-            Swift.print("start: ", start, " end: ", end)
-            
-            for val in start..<end {
-                Swift.print(val)
-            }
-            
-            if innerLength == count {
-                break
-            }
-            
-            if innerLength <= 1 {
-                innerLength += 1
+        var copy = Array(nodes)
+        var counter = copy.count
+        
+        while counter > 0, copy.count > 0 {
+            if counter == nodes.count {
+                // remove the first element only
+                out += "{ \(copy.removeFirst()) "
+                counter -= 1
+                
             } else {
-                innerLength *= 2
+                out += "{ "
+                var temp = iterator
+                
+                while temp > 0, copy.count > 0 {
+                    out += "\(copy.removeFirst()) "
+                    temp -= 1
+                }
+                
+                counter -= iterator
+                iterator = iterator * 2
             }
-            
-            start = index + 1
-            end = innerLength + 1
-
-            if innerLength > count {
-                innerLength = count
-            }
+            out += "} \n"
         }
-        return ""
+        
+        return out
     }
-    */
     
 }
 
 extension Heap: ExpressibleByArrayLiteral {
     
     public init(arrayLiteral elements: T...) {
-        self.init(array: elements, order: <)
+        self.init(array: elements, order: >)
     }
 }
 
@@ -236,7 +231,9 @@ maxHeap.insert(node: 2)
 maxHeap.insert(node: 7)
 maxHeap.insert(node: 9)
 
-//var heap: Heap = [3, 1, 4, 2, 7, 9, 8]
+debugPrint(maxHeap)
 
+var heap: Heap = [3, 1, 4, 2, 7, 9, 8]
+debugPrint(heap)
 
 //: [Next](@next)
