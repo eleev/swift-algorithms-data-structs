@@ -9,5 +9,6 @@
         <page name='Tree'/>
         <page name='Graph'/>
         <page name='Heap'/>
+        <page name='PriorityQueue'/>
     </pages>
 </playground>
