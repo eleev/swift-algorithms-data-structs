@@ -34,11 +34,11 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
     - [Binary](https://github.com/jVirus/ios-algorithms-book/blob/master/Search.playground/Pages/Binary.xcplaygroundpage/Contents.swift)
     - [Linear](https://github.com/jVirus/ios-algorithms-book/blob/master/Search.playground/Pages/Linear.xcplaygroundpage/Contents.swift)
     - Breadth First 
+    - [Heap](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Pages/Heap.xcplaygroundpage/Contents.swift)
+    - [Tree](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Pages/Tree.xcplaygroundpage/Contents.swift)
   - [String Search](https://github.com/jVirus/ios-algorithms-book/tree/master/String%20Search.playground)
     - [Brute-Force](https://github.com/jVirus/ios-algorithms-book/blob/master/String%20Search.playground/Contents.swift)
     - Boyer-Moore 
-    - [Heap](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Pages/Heap.xcplaygroundpage/Contents.swift)
-    - [Tree](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Pages/Tree.xcplaygroundpage/Contents.swift)
   - Graphs
     - Dijkstra's shortest path algorithm
     - Minimum Spanning Tree (unweighted tree)
