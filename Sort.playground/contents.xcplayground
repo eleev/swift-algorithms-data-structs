@@ -7,5 +7,6 @@
         <page name='Quick-Lomuto-Scheme'/>
         <page name='Bubble'/>
         <page name='Shell'/>
+        <page name='Radix'/>
     </pages>
 </playground>
