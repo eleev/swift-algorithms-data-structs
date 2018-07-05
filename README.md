@@ -1,3 +1,6 @@
+[![Language](https://img.shields.io/badge/language-swift-orange.svg)]()
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
+
 # ios-algorighms-book
 This is a `Playground-based` project that contains examples of common `Algorithms` and `Data Structures` implemented using the latest stable version of `Swift`programming language. The development attempts to fully utilize `Standard Library` and `Protocol-Oriented` paradigm. The book provides visualizations using `SpriteKit` and `SceneKit` frameworks (in development). 
 
@@ -29,7 +32,7 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
     - [Bubble](https://github.com/jVirus/ios-algorithms-book/blob/master/Sort.playground/Pages/Bubble.xcplaygroundpage/Contents.swift)
     - [Heap](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Sources/Heap.swift)
     - [Shell](https://github.com/jVirus/ios-algorithms-book/blob/master/Sort.playground/Pages/Shell.xcplaygroundpage/Contents.swift)
-    - Radix
+    - [Radix](https://github.com/jVirus/ios-algorithms-book/blob/master/Sort.playground/Pages/Radix.xcplaygroundpage/Contents.swift)
   - [Search](https://github.com/jVirus/ios-algorithms-book/tree/master/Search.playground/Pages)
     - [Binary](https://github.com/jVirus/ios-algorithms-book/blob/master/Search.playground/Pages/Binary.xcplaygroundpage/Contents.swift)
     - [Linear](https://github.com/jVirus/ios-algorithms-book/blob/master/Search.playground/Pages/Linear.xcplaygroundpage/Contents.swift)
