@@ -18,7 +18,14 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
   - Doubly Linked List
   - Circular Linked List
   - [Tree](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Pages/Tree.xcplaygroundpage/Contents.swift) 
-  - Binary Tree
+  - [Binary Tree](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Pages/BinaryTree.xcplaygroundpage/Contents.swift)
+  - Binary Search Tree
+  - B-Tree
+  - Splay Tree
+  - Red-Black Tree
+  - AVL Tree
+  - Trie Tree
+  - Radix Tree
   - Quad Tree
   - Octree
   - [Heap](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Pages/Heap.xcplaygroundpage/Contents.swift) 
