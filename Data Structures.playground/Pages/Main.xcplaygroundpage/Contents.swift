@@ -11,6 +11,13 @@ This is a Playground Book that contains examples of common Algorithms and Data S
  - Circular Linked List
  - [Tree](Tree)
  - [Binary Tree](BinaryTree)
+ - Binary Search Tree
+ - B-Tree
+ - Splay Tree
+ - Red-Black Tree
+ - AVL Tree
+ - Trie Tree
+ - Radix Tree
  - Quad Tree
  - Octree
  - [Heap](Heap)
