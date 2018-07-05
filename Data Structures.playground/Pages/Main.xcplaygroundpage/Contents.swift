@@ -10,7 +10,7 @@ This is a Playground Book that contains examples of common Algorithms and Data S
  - Doubly Linked List
  - Circular Linked List
  - [Tree](Tree)
- - Binary Tree
+ - [Binary Tree](BinaryTree)
  - Quad Tree
  - Octree
  - [Heap](Heap)
