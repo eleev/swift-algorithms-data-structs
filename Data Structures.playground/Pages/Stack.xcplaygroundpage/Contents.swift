@@ -127,5 +127,146 @@ debugPrint("last removed element: ", lastElement)
 stack.push(element: 10)
 debugPrint("pushed 10: ", stack)
 
+/*:
+ Great! Everything works as expected. Now time to move on and implement visualization using SpriteKit framework. Thankfully our Stack is generic which means that we can easily create some custom SKSpriteNode classes and visualize the data structure.
+ */
+
+import SpriteKit
+import PlaygroundSupport
+
+class StackElementNode: SKSpriteNode {
+    
+    init() {
+        let size = CGSize(width: 50, height: 150)
+        
+        let randomHue = CGFloat(arc4random_uniform(255))
+        let randomSaturation = CGFloat(arc4random_uniform(255))
+        let randomBrightness = CGFloat(arc4random_uniform(255))
+        let color = SKColor(hue: randomHue, saturation: randomSaturation, brightness: randomBrightness, alpha: 1.0)
+            
+        super.init(texture: SKTexture(imageNamed: "book spine"), color: color, size: size)
+        zRotation = 90 * CGFloat.pi / 180.0
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError(#function + " required initizlier for NSCode has not been implemented")
+    }
+}
+
+
+
+class StackScene: SKScene {
+    
+    var stackElements: Stack<StackElementNode>!
+    
+    override func didMove(to view: SKView) {
+        stackElements = createRandomStackElementNodeArray(for: 5)
+        appearenceAnimation()
+        
+        popButton()
+        pushButton()
+    }
+    
+    func popButton() {
+        let popButton = SKSpriteNode(color: .white, size: CGSize(width: 120, height: 50))
+        popButton.position = CGPoint(x: 150, y: 700)
+        popButton.name = "pop"
+        
+        let popLabel = SKLabelNode(text: "Pop")
+        popLabel.fontColor = SKColor.gray
+        popLabel.verticalAlignmentMode = SKLabelVerticalAlignmentMode.center
+        
+        popButton.addChild(popLabel)
+        addChild(popButton)
+    }
+    
+    func pushButton() {
+        let pushButton = SKSpriteNode(color: .white, size: CGSize(width: 120, height: 50))
+        pushButton.position = CGPoint(x: 450, y: 700)
+        pushButton.name = "push"
+        
+        let pushLabel = SKLabelNode(text: "Push")
+        pushLabel.fontColor = SKColor.gray
+        pushLabel.verticalAlignmentMode = SKLabelVerticalAlignmentMode.center
+        
+        pushButton.addChild(pushLabel)
+        addChild(pushButton)
+    }
+    
+    func appearenceAnimation() {
+        
+        // Animate creation of the stack of books
+        
+        let appearAction = SKAction.unhide()
+        let moveUp = SKAction.move(to: CGPoint(x: 300, y: 500), duration: 1.0)
+        
+        for (index, book) in stackElements.reversed().enumerated() {
+            book.position = CGPoint.init(x: 100, y: 400)
+            book.isHidden = true
+            addChild(book)
+            
+            let moveDown = SKAction.move(to: CGPoint(x: 300, y: CGFloat(50 * CGFloat(index + 1))), duration: 1.5)
+            let waitAction = SKAction.wait(forDuration: TimeInterval(index * 2))
+            let sequence = SKAction.sequence([waitAction, appearAction, moveUp, moveDown])
+            book.run(sequence)
+        }
+    }
+    
+    func createRandomStackElementNodeArray(for numberOfElements: Int) -> Stack<StackElementNode> {
+        var nodes: Stack<StackElementNode> = Stack()
+        
+        for _ in 0..<numberOfElements {
+            let node = StackElementNode()
+            nodes.push(element: node)
+        }
+        return nodes
+    }
+    
+    // MARK: - Overrides
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let selfLocation = touches.first?.location(in: self) else {
+            return
+        }
+        let nodes = self.nodes(at: selfLocation)
+        
+        for node in nodes  {
+            if node.name == "pop" {
+                // pop action
+                let element = stackElements.pop()
+                let moveUpAction = SKAction.move(by: CGVector(dx: 0, dy: 200), duration: 2.0)
+                let fadeOut = SKAction.fadeOut(withDuration: 1.0)
+                let removeAction = SKAction.removeFromParent()
+                let actionSequence = SKAction.sequence([moveUpAction, fadeOut, removeAction])
+                element?.run(actionSequence)
+            } else if node.name == "push" {
+                
+                let node = StackElementNode()
+                node.position = CGPoint.init(x: 100, y: 400)
+                node.isHidden = true
+                addChild(node)
+                stackElements.push(element: node)
+                
+                let appearAction = SKAction.unhide()
+                let moveUp = SKAction.move(to: CGPoint(x: 300, y: 500), duration: 1.0)
+                let moveDown = SKAction.move(to: CGPoint(x: 300, y: CGFloat(50 * CGFloat(stackElements.count))), duration: 2.0)
+                let waitAction = SKAction.wait(forDuration: TimeInterval(2))
+                let sequence = SKAction.sequence([waitAction, appearAction, moveUp, moveDown])
+                node.run(sequence)
+            }
+            
+        }
+    }
+    
+}
+
+let skScene = StackScene(size: CGSize(width: 600, height: 800))
+skScene.backgroundColor = .black
+
+
+let skView = SKView(frame: CGRect(x: 0, y: 0, width: 600, height: 800))
+skView.presentScene(skScene)
+PlaygroundPage.current.liveView = skView
+
 //: [Next](@next)
 
