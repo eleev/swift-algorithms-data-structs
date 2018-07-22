@@ -3,8 +3,8 @@
 
 **Last Update: 22/July/2018.**
 
-# vizia
-This is a `Playground-based` project that contains examples of common `Algorithms` and `Data Structures` implemented using the latest stable version of `Swift`programming language. The development attempts to fully utilize `Standard Library` and `Protocol-Oriented` paradigm. The book provides interactive visualizations using `SpriteKit` and `SceneKit` frameworks (in development). 
+# interviz
+This is a `playground-based` project that contains examples of common `Algorithms` and `Data Structures` implemented using the latest stable version of `Swift`programming language. The development attempts to fully utilize `Standard Library` and `Protocol-Oriented` paradigm. The project provides interactive visualizations using `SpriteKit` and `SceneKit` frameworks (in development). The name`interviz` stands for `interactive visualization` which is one of purposes of this project - to provide a UI interface for common algorithms and data structures.
 
 # About 
 Each major section will be wrapped into a separete `.playground` file, meaning that `data structures` and `algorithms` will be separeted for convenient management. :octocat:
