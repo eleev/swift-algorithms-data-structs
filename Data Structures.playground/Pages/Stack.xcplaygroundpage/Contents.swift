@@ -157,23 +157,61 @@ class StackElementNode: SKSpriteNode {
 
 class StackScene: SKScene {
     
-    var stackElements: Stack<StackElementNode>!
+    var stackElements: Stack<StackElementNode>! {
+        didSet {
+            if stackElements != nil {
+                numberOfElements.text = "\(stackElements.count) books"
+            }
+        }
+    }
+    lazy var numberOfElements: SKLabelNode = {
+        let label = SKLabelNode(text: "0 books")
+        label.position = CGPoint(x: 500, y: 300)
+        label.color = .gray
+        label.fontSize = 28
+        label.verticalAlignmentMode = .center
+        return label
+    }()
     
     override func didMove(to view: SKView) {
-        stackElements = createRandomStackElementNodeArray(for: 5)
+        stackElements = createRandomStackElementNodeArray(for: 4)
         appearenceAnimation()
         
         popButton()
         pushButton()
+        label()
+        description()
+        
+        addChild(numberOfElements)
+    }
+    
+    func label() {
+        let nameLabel = SKLabelNode(text: "Stack")
+        nameLabel.position = CGPoint(x: 300, y: 760)
+        nameLabel.color = .gray
+        nameLabel.fontSize = 64
+        nameLabel.verticalAlignmentMode = .center
+        addChild(nameLabel)
+    }
+    
+    func description() {
+        let nameLabel = SKLabelNode(text: "Limit is 9 books")
+        nameLabel.position = CGPoint(x: 300, y: 700)
+        nameLabel.color = .darkGray
+        nameLabel.fontSize = 24
+        nameLabel.verticalAlignmentMode = .center
+        addChild(nameLabel)
     }
     
     func popButton() {
         let popButton = SKSpriteNode(color: .white, size: CGSize(width: 120, height: 50))
-        popButton.position = CGPoint(x: 150, y: 700)
+        popButton.position = CGPoint(x: 100, y: 700)
         popButton.name = "pop"
         
         let popLabel = SKLabelNode(text: "Pop")
-        popLabel.fontColor = SKColor.gray
+        popLabel.fontColor = SKColor.darkGray
+        popLabel.fontSize = 24
+        
         popLabel.verticalAlignmentMode = SKLabelVerticalAlignmentMode.center
         
         popButton.addChild(popLabel)
@@ -182,11 +220,12 @@ class StackScene: SKScene {
     
     func pushButton() {
         let pushButton = SKSpriteNode(color: .white, size: CGSize(width: 120, height: 50))
-        pushButton.position = CGPoint(x: 450, y: 700)
+        pushButton.position = CGPoint(x: 500, y: 700)
         pushButton.name = "push"
         
         let pushLabel = SKLabelNode(text: "Push")
-        pushLabel.fontColor = SKColor.gray
+        pushLabel.fontColor = SKColor.darkGray
+        pushLabel.fontSize = 24
         pushLabel.verticalAlignmentMode = SKLabelVerticalAlignmentMode.center
         
         pushButton.addChild(pushLabel)
@@ -198,16 +237,15 @@ class StackScene: SKScene {
         // Animate creation of the stack of books
         
         let appearAction = SKAction.unhide()
-        let moveUp = SKAction.move(to: CGPoint(x: 300, y: 500), duration: 1.0)
         
         for (index, book) in stackElements.reversed().enumerated() {
-            book.position = CGPoint.init(x: 100, y: 400)
+            book.position = CGPoint.init(x: 300, y: 500)
             book.isHidden = true
             addChild(book)
             
             let moveDown = SKAction.move(to: CGPoint(x: 300, y: CGFloat(50 * CGFloat(index + 1))), duration: 1.5)
             let waitAction = SKAction.wait(forDuration: TimeInterval(index * 2))
-            let sequence = SKAction.sequence([waitAction, appearAction, moveUp, moveDown])
+            let sequence = SKAction.sequence([waitAction, appearAction, moveDown])
             book.run(sequence)
         }
     }
@@ -239,19 +277,17 @@ class StackScene: SKScene {
                 let removeAction = SKAction.removeFromParent()
                 let actionSequence = SKAction.sequence([moveUpAction, fadeOut, removeAction])
                 element?.run(actionSequence)
-            } else if node.name == "push" {
-                
+            } else if node.name == "push", stackElements.count <= 8  {
                 let node = StackElementNode()
-                node.position = CGPoint.init(x: 100, y: 400)
+                node.position = CGPoint.init(x: 300, y: 600)
                 node.isHidden = true
                 addChild(node)
                 stackElements.push(element: node)
                 
                 let appearAction = SKAction.unhide()
-                let moveUp = SKAction.move(to: CGPoint(x: 300, y: 500), duration: 1.0)
-                let moveDown = SKAction.move(to: CGPoint(x: 300, y: CGFloat(50 * CGFloat(stackElements.count))), duration: 2.0)
-                let waitAction = SKAction.wait(forDuration: TimeInterval(2))
-                let sequence = SKAction.sequence([waitAction, appearAction, moveUp, moveDown])
+                let moveDown = SKAction.move(to: CGPoint(x: 300, y: CGFloat(50 * CGFloat(stackElements.count))), duration: 1.5)
+                let waitAction = SKAction.wait(forDuration: TimeInterval(1))
+                let sequence = SKAction.sequence([waitAction, appearAction, moveDown])
                 node.run(sequence)
             }
             
