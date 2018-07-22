@@ -1,6 +1,8 @@
 [![Language](https://img.shields.io/badge/language-swift-orange.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
+**Last Update: 22/July/2018.**
+
 # vizia
 This is a `Playground-based` project that contains examples of common `Algorithms` and `Data Structures` implemented using the latest stable version of `Swift`programming language. The development attempts to fully utilize `Standard Library` and `Protocol-Oriented` paradigm. The book provides interactive visualizations using `SpriteKit` and `SceneKit` frameworks (in development). 
 
