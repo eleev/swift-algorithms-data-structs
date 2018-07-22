@@ -60,7 +60,7 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
 The following list contains interactive visualizations that were implemented as part of the project. In majority of cases you can interact with a `data structure` or `algorithm` through a number of `UI` controlls. Visualizations are implemented using `SpriteKit` framework and are intended to explain the work of `data structures` and `algorithms` in a more highlevel way, which is a great way to learn especially if you are a beginner or you aren't familiar with something listed in the repository. 
 
 ## Stack 
-<img src="https://user-images.githubusercontent.com/5098753/43039194-ff8a208a-8d30-11e8-95b2-fabefc5c83ea.gif" width="350">
+<img src="https://user-images.githubusercontent.com/5098753/43043854-e85c8b82-8da3-11e8-9061-e25b82cd24e9.gif" width="350">
 
 #  Author 
 [Astemir Eleev](https://github.com/jVirus)
