@@ -66,6 +66,12 @@ Stack visalization has two main UI controlls: `push` and `pop`. They perform cor
 
 <img src="https://user-images.githubusercontent.com/5098753/43043854-e85c8b82-8da3-11e8-9061-e25b82cd24e9.gif" width="350">
 
+## Queue
+Queue visualization is similar to Stack interactive visualization: it has two main `UI` controls that allow you to interact with the interface of the `Queue` data structure for `enqueue` and `dequeue` operations. You can see the number of animals in the queue as well.
+
+<img src="https://user-images.githubusercontent.com/5098753/43047859-99bdd2d6-8de6-11e8-9669-10afab9a5cc7.gif" width="350">
+
+
 #  Author 
 [Astemir Eleev](https://github.com/jVirus)
 
