@@ -2,9 +2,14 @@
 
 import Foundation
 
-indirect enum BinaryTree<T> {
+ enum BinaryTree<T> where T : Comparable {
+    
+    // MARK: - Cases
+    
     case empty
-    case node(BinaryTree, T, BinaryTree)
+    indirect case node(BinaryTree, T, BinaryTree)
+    
+    // MARK: - Properties
     
     var count: Int {
         switch self {
@@ -13,6 +18,45 @@ indirect enum BinaryTree<T> {
         case .empty:
             return 0
         }
+    }
+    
+    var isEmpty: Bool {
+        switch self {
+        case .empty:
+            return true
+        case .node(_, _, _):
+            return false
+        }
+    }
+    
+    var elements: [T] {
+        switch self {
+        case .empty:
+            return []
+        case .node(let left, let element, let right):
+            return left.elements + [element] + right.elements
+        }
+    }
+    
+    // MARK: - Static methods
+    
+    static func contains(element: T, tree: BinaryTree<T>) -> Bool {
+        switch tree {
+        case .empty:
+            return false
+        case .node(let left, let item, let right):
+            if element < item {
+                return contains(element: element, tree: left)
+            } else if element > item {
+                return contains(element: element, tree: right)
+            }
+            return true
+        }
+    }
+    
+    
+    static func constructEmpty() -> BinaryTree {
+        return .empty
     }
 }
 
@@ -64,6 +108,14 @@ let finalTree = BinaryTree.node(tree2, "+", treeMult)
 
 print(finalTree)
 
+let containsThree = BinaryTree.contains(element: "3", tree: finalTree)
+print(containsThree)
+
+let containsFour = BinaryTree.contains(element: "4", tree: finalTree)
+print(containsFour)
+
+let treeElementsArray = finalTree.elements
+print(treeElementsArray)
 
 //: In order to properly construct Binary Tree you need to start building the tree by layers. The means the first thing you need to do is to draw the tree and split every single operation into separate layer. Multiplying 5 and 3 is the first operation that happens, that is why we compose this operation separately and form a Binary Tree node separately. Then we define 2 as a separate leaf node and add it to the first layer, which results into a final tree node that contains all the nodes.
 
