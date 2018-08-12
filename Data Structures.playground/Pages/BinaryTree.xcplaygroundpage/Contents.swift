@@ -2,7 +2,7 @@
 
 import Foundation
 
- enum BinaryTree<T> where T : Comparable {
+enum BinaryTree<T> where T : Comparable {
     
     // MARK: - Cases
     
