@@ -49,7 +49,10 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
     - [Tree](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Pages/Tree.xcplaygroundpage/Contents.swift)
   - [String Search](https://github.com/jVirus/ios-algorithms-book/tree/master/String%20Search.playground)
     - [Brute-Force](https://github.com/jVirus/ios-algorithms-book/blob/master/String%20Search.playground/Contents.swift)
-    - Boyer-Moore 
+    - Boyer-Moore
+    - Rabin-Karp
+    - Finite automation
+    - Knuth-Morris-Pratt
   - Graphs
     - Dijkstra's shortest path algorithm
     - Minimum Spanning Tree (unweighted tree)
