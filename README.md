@@ -1,7 +1,7 @@
 [![Language](https://img.shields.io/badge/language-swift-orange.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 22/July/2018.**
+**Last Update: 12/August/2018.**
 
 # interviz
 This is a `playground-based` project that contains examples of common `Algorithms` and `Data Structures` implemented using the latest stable version of `Swift`programming language. The development attempts to fully utilize `Standard Library` and `Protocol-Oriented` paradigm. The project provides interactive visualizations using `SpriteKit` and `SceneKit` frameworks (in development). The name`interviz` stands for `interactive visualization` which is one of purposes of this project - to provide a UI interface for common algorithms and data structures.
