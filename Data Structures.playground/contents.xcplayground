@@ -11,5 +11,6 @@
         <page name='Heap'/>
         <page name='PriorityQueue'/>
         <page name='BinaryTree'/>
+        <page name='BinarySearchTree'/>
     </pages>
 </playground>

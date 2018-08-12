@@ -14,14 +14,14 @@ enum BinarySearchTreeError: Error {
     case wrongMethodCall(message: String)
 }
 
-class BinarySearchTreeNode<T: Comparable> {
+class BinarySearchTree<T: Comparable> {
     
     // MARK: - Properties
     
     var value: T
-    var leftChild: BinarySearchTreeNode?
-    var rightChild: BinarySearchTreeNode?
-    weak var parent: BinarySearchTreeNode?
+    var leftChild: BinarySearchTree?
+    var rightChild: BinarySearchTree?
+    weak var parent: BinarySearchTree?
     
     // MARK: - Initializers
     
@@ -29,7 +29,7 @@ class BinarySearchTreeNode<T: Comparable> {
         self.init(value: value, leftChild: nil, rightChild: nil, parent: nil)
     }
     
-    init(value: T, leftChild: BinarySearchTreeNode?, rightChild: BinarySearchTreeNode?, parent: BinarySearchTreeNode?) {
+    init(value: T, leftChild: BinarySearchTree?, rightChild: BinarySearchTree?, parent: BinarySearchTree?) {
         self.value = value
         self.leftChild = leftChild
         self.rightChild = rightChild
@@ -42,7 +42,7 @@ class BinarySearchTreeNode<T: Comparable> {
     /// As a result we get sorted results from the smallest value to the greathest (according to the comparator patter, since each element must conform to Comparable protocol)
     /// - node: is a BinarySearchTreeNode? which you would like to traverse
     /// - handler: is an escaping closure that accept T argument and returns void. Use this injectasble closure in order to get the values from the traversal, then accumulate them or process them in place.
-    class func traverseInorder(from node: BinarySearchTreeNode?, handler: @escaping (T)->()) {
+    class func traverseInorder(from node: BinarySearchTree?, handler: @escaping (T)->()) {
         // Exit condition from the recursize method calls
         guard let node = node else {
             return
@@ -56,7 +56,7 @@ class BinarySearchTreeNode<T: Comparable> {
     /// Preorder binary tree traversal simply means a traversal with the following rule: node value -> left value -> right value
     /// - node: is a BinarySearchTreeNode? which you would like to traverse
     /// - handler: is an escaping closure that accept T argument and returns void. Use this injectasble closure in order to get the values from the traversal, then accumulate them or process them in place.
-    class func traversePreorder(from node: BinarySearchTreeNode?, handler: @escaping (T)->()) {
+    class func traversePreorder(from node: BinarySearchTree?, handler: @escaping (T)->()) {
         // Exit condition from the recursize method calls
         guard let node = node else {
             return
@@ -70,7 +70,7 @@ class BinarySearchTreeNode<T: Comparable> {
     /// Preorder binary tree traversal simply means a traversal with the following rule: left value -> right value -> node value
     /// - node: is a BinarySearchTreeNode? which you would like to traverse
     /// - handler: is an escaping closure that accept T argument and returns void. Use this injectasble closure in order to get the values from the traversal, then accumulate them or process them in place.
-    class func traversePostorder(from node: BinarySearchTreeNode?, handler: @escaping (T)->()) {
+    class func traversePostorder(from node: BinarySearchTree?, handler: @escaping (T)->()) {
         // Exit condition from the recursize method calls
         guard let node = node else {
             return
@@ -81,7 +81,7 @@ class BinarySearchTreeNode<T: Comparable> {
         handler(node.value)
     }
     
-    func search(value: T) -> BinarySearchTreeNode? {
+    func search(value: T) -> BinarySearchTree? {
         if value == self.value {
             return self
         }
@@ -129,14 +129,14 @@ class BinarySearchTreeNode<T: Comparable> {
     
     // MARK: - Private methods
     
-    private func createNewNode(with value: T) -> BinarySearchTreeNode {
-        let newNode = BinarySearchTreeNode(value: value)
+    private func createNewNode(with value: T) -> BinarySearchTree {
+        let newNode = BinarySearchTree(value: value)
         return newNode
     }
     
 }
 
-extension BinarySearchTreeNode: CustomStringConvertible, CustomDebugStringConvertible {
+extension BinarySearchTree: CustomStringConvertible, CustomDebugStringConvertible {
     
     // MARK: - Overriden properties
     
@@ -175,7 +175,7 @@ extension BinarySearchTreeNode: CustomStringConvertible, CustomDebugStringConver
 
 // Let's use Int as out type for the current tree and see what results it produces in practice:
 
-let rootNode = BinarySearchTreeNode(value: 10)
+let rootNode = BinarySearchTree(value: 10)
 try! rootNode.insertNode(for: 20)
 try! rootNode.insertNode(for: 5)
 try! rootNode.insertNode(for: 21)
@@ -186,19 +186,19 @@ try! rootNode.insertNode(for: 4)
 print(rootNode)
 
 var assembledElements = [Int]()
-BinarySearchTreeNode.traverseInorder(from: rootNode, handler: { value in
+BinarySearchTree.traverseInorder(from: rootNode, handler: { value in
     assembledElements += [value]
 })
 print(assembledElements)
 
 var preorderElements = [Int]()
-BinarySearchTreeNode.traversePreorder(from: rootNode, handler: { value in
+BinarySearchTree.traversePreorder(from: rootNode, handler: { value in
     preorderElements += [value]
 })
 print(preorderElements)
 
 var postorderElements = [Int]()
-BinarySearchTreeNode.traversePostorder(from: rootNode, handler: { value in
+BinarySearchTree.traversePostorder(from: rootNode, handler: { value in
     postorderElements += [value]
 })
 print(postorderElements)
@@ -209,7 +209,7 @@ print(node)
 
 // Great! Now let's change the type to String and do the same:
 
-let rootNodeString = BinarySearchTreeNode(value: "Hello")
+let rootNodeString = BinarySearchTree(value: "Hello")
 try! rootNodeString.insertNode(for: "World")
 try! rootNodeString.insertNode(for: "We")
 try! rootNodeString.insertNode(for: "Love")
@@ -220,7 +220,7 @@ try! rootNodeString.insertNode(for: "Language")
 print(rootNodeString)
 
 var assembledElementsString = [String]()
-BinarySearchTreeNode.traverseInorder(from: rootNodeString, handler: { value in
+BinarySearchTree.traverseInorder(from: rootNodeString, handler: { value in
     assembledElementsString += [value]
 })
 print(assembledElementsString)
