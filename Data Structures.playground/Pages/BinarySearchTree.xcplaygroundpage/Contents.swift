@@ -38,6 +38,26 @@ class BinarySearchTree<T: Comparable> {
     
     // MARK: - Methods
     
+    func height() -> Int {
+        if leftChild == nil, rightChild == nil {
+            return 0
+        }
+        return 1 + max(leftChild?.height() ?? 0, rightChild?.height() ?? 0)
+    }
+    
+    func depth() -> Int {
+        guard var parentNode = parent else {
+            return 0
+        }
+        
+        var depth = 1
+        while let grandParentNode = parentNode.parent {
+            depth += 1
+            parentNode = grandParentNode
+        }
+        return depth
+    }
+    
     /// Inorder binary tree traversal simply means a traversal with the following rule: left value < node value < right value
     /// As a result we get sorted results from the smallest value to the greathest (according to the comparator patter, since each element must conform to Comparable protocol)
     /// - node: is a BinarySearchTreeNode? which you would like to traverse
@@ -107,6 +127,56 @@ class BinarySearchTree<T: Comparable> {
         addNode(value: value)
     }
     
+    func delete() {
+        if let left = leftChild {
+            if let _ = rightChild {
+                // 2 children
+                exchangeWithSuccessor(node: self)
+            } else {
+                // 1 child - left
+                attachParent(to: left, for: self)
+            }
+        } else if let right = rightChild {
+            // 1 child - right
+            attachParent(to: right, for: self)
+        } else {
+            // connet the node to the parent node
+            attachParent(to: nil, for: self)
+        }
+        parent = nil
+        leftChild = nil
+        rightChild = nil
+    }
+    
+    func deleteNode(for value: T) -> Bool {
+        guard let nodeToDelete = search(value: value) else {
+            return false
+        }
+       
+        if let left = nodeToDelete.leftChild {
+            if let _ = nodeToDelete.rightChild {
+                // 2 children
+                exchangeWithSuccessor(node: nodeToDelete)
+            } else {
+                // 1 child - left
+                attachParent(to: left, for: nodeToDelete)
+            }
+        } else if let right = nodeToDelete.rightChild {
+            // 1 child - right
+            attachParent(to: right, for: nodeToDelete)
+        } else {
+            // connet the node to the parent node
+            attachParent(to: nil, for: nodeToDelete)
+        }
+        nodeToDelete.parent = nil
+        nodeToDelete.leftChild = nil
+        nodeToDelete.rightChild = nil
+        
+        return true
+    }
+    
+    // MARK: - Private methods
+
     private func addNode(value: T) {
         if value < self.value {
             if let leftChild = self.leftChild {
@@ -127,11 +197,74 @@ class BinarySearchTree<T: Comparable> {
         }
     }
     
-    // MARK: - Private methods
-    
     private func createNewNode(with value: T) -> BinarySearchTree {
         let newNode = BinarySearchTree(value: value)
         return newNode
+    }
+    
+    private func attachParent(to child: BinarySearchTree?, for node: BinarySearchTree) {
+        guard let parent = node.parent else {
+            child?.parent = node.parent
+            return
+        }
+        if parent.leftChild === node {
+            parent.leftChild = child
+            child?.parent = parent
+        } else if parent.rightChild === node {
+            parent.rightChild = child
+            child?.parent = parent
+        }
+    }
+    
+    private func exchangeWithSuccessor(node: BinarySearchTree) {
+        guard let right = node.rightChild, let left = node.leftChild else {
+            return
+        }
+        let successor = right.minNode()
+        successor.delete()
+        
+        successor.leftChild = left
+        left.parent = successor
+        
+        if right !== successor {
+            successor.rightChild = right
+            right.parent = successor
+        } else {
+            successor.rightChild = nil
+        }
+        attachParent(to: successor, for: node)
+    }
+    
+    private func minValue() -> T {
+        if let left = leftChild {
+            return left.minValue()
+        } else {
+            return value
+        }
+    }
+    
+    private func maxValue() -> T {
+        if let right = rightChild {
+            return right.maxValue()
+        } else {
+            return value
+        }
+    }
+    
+    private func minNode() -> BinarySearchTree {
+        if let left = leftChild {
+            return left.minNode()
+        } else {
+            return self
+        }
+    }
+    
+    private func maxNode() -> BinarySearchTree {
+        if let right = rightChild {
+            return right.maxNode()
+        } else {
+            return self
+        }
     }
     
 }
@@ -185,6 +318,11 @@ try! rootNode.insertNode(for: 4)
 
 print(rootNode)
 
+let wasDeleted = rootNode.deleteNode(for: 5)
+print("wasDeleted ", wasDeleted)
+
+print(rootNode)
+
 var assembledElements = [Int]()
 BinarySearchTree.traverseInorder(from: rootNode, handler: { value in
     assembledElements += [value]
@@ -205,7 +343,7 @@ print(postorderElements)
 
 // Search the number
 let node = rootNode.search(value: 5)
-print(node)
+print(node as Any)
 
 // Great! Now let's change the type to String and do the same:
 
