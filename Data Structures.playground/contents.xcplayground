@@ -12,5 +12,6 @@
         <page name='PriorityQueue'/>
         <page name='BinaryTree'/>
         <page name='BinarySearchTree'/>
+        <page name='Red-Black Tree'/>
     </pages>
 </playground>
