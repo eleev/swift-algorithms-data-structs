@@ -2,6 +2,8 @@
 
 import Foundation
 
+/// This version of Binary Tree data strucure uses functional, value-based approach, instead of class-based, reference alternative. This was done to demonstrate that using Swift it's possible to use more functional style data structures development. Although take it with a grain of salt :)
+
 enum BinaryTree<T> where T : Comparable {
     
     // MARK: - Cases
@@ -35,6 +37,15 @@ enum BinaryTree<T> where T : Comparable {
             return []
         case .node(let left, let element, let right):
             return left.elements + [element] + right.elements
+        }
+    }
+    
+    var height: Int {
+        switch self {
+        case .empty:
+            return 0
+        case .node(let left, let _ , let right):
+            return 1 + max(left.height, right.height)
         }
     }
     
@@ -116,6 +127,8 @@ print(containsFour)
 
 let treeElementsArray = finalTree.elements
 print(treeElementsArray)
+
+print(finalTree.height) 
 
 //: In order to properly construct Binary Tree you need to start building the tree by layers. The means the first thing you need to do is to draw the tree and split every single operation into separate layer. Multiplying 5 and 3 is the first operation that happens, that is why we compose this operation separately and form a Binary Tree node separately. Then we define 2 as a separate leaf node and add it to the first layer, which results into a final tree node that contains all the nodes.
 
