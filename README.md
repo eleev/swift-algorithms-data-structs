@@ -1,7 +1,7 @@
 [![Language](https://img.shields.io/badge/language-swift-orange.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 12/August/2018.**
+**Last Update: 13/August/2018.**
 
 # interviz
 This is a `playground-based` project that contains examples of common `Algorithms` and `Data Structures` implemented using the latest stable version of `Swift`programming language. The development attempts to fully utilize `Standard Library` and `Protocol-Oriented` paradigm. The project provides interactive visualizations using `SpriteKit` and `SceneKit` frameworks (in development). The name`interviz` stands for `interactive visualization` which is one of purposes of this project - to provide a UI interface for common algorithms and data structures.
@@ -24,7 +24,7 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
   - [Binary Search Tree](https://github.com/jVirus/interviz/blob/master/Data%20Structures.playground/Pages/BinarySearchTree.xcplaygroundpage/Contents.swift)
   - B-Tree
   - Splay Tree
-  - Red-Black Tree
+  - [Red-Black Tree](https://github.com/jVirus/interviz/blob/master/Data%20Structures.playground/Pages/Red-Black%20Tree.xcplaygroundpage/Contents.swift)
   - AVL Tree
   - Trie Tree
   - Radix Tree
