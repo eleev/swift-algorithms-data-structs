@@ -33,7 +33,15 @@ extension Edge: CustomStringConvertible, CustomDebugStringConvertible {
     }
     
     private var commonDescription: String {
-        return "from: \(from), \t to: \(to), \t weight: \(weight)"
+        var weightDescription = ""
+
+        if let weight = self.weight {
+            weightDescription = "\(weight)"
+        } else {
+            weightDescription = "nil"
+        }
+        
+        return "from: \(from), \t to: \(to), \t weight: \(weightDescription)"
     }
 }
 
@@ -225,6 +233,6 @@ let results = adjacencyListGraph.searchVertex(with: "Moscow")
 print("\nSearch Results: ")
 print(results)
 
-// Pleas note that the implementation is not complete. MST, Prim's and Dijkstra's algorithms will be added later. 
+// Pleas note that the implementation is not complete. MST, Prim's and Dijkstra's algorithms will be added later.
 
 //: [Next](@next)
