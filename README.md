@@ -3,8 +3,8 @@
 
 **Last Update: 13/August/2018.**
 
-# interviz
-This is a `playground-based` project that contains examples of common `Algorithms` and `Data Structures` implemented using the latest stable version of `Swift`programming language. The development attempts to fully utilize `Standard Library` and `Protocol-Oriented` paradigm. The project provides interactive visualizations using `SpriteKit` and `SceneKit` frameworks (in development). The name`interviz` stands for `interactive visualization` which is one of purposes of this project - to provide a UI interface for common algorithms and data structures.
+# swift-algorithms-data-structs
+This is a `playground-based` project that contains examples of common `Algorithms` and `Data Structures` implemented using the latest stable version of `Swift`programming language. The development attempts to fully utilize `Standard Library` and `Protocol-Oriented` paradigm. The project provides interactive visualizations using `SpriteKit` and `SceneKit` frameworks (in development).
 
 # About 
 Each major section will be wrapped into a separete `.playground` file, meaning that `data structures` and `algorithms` will be separeted for convenient management. :octocat:
