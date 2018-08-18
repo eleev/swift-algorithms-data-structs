@@ -11,44 +11,44 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
 
 ## Contnet 
 - [About](#about)
-- [Data Structures](https://github.com/jVirus/iOS-Algo-Play-Book/tree/master/Data%20Structures.playground/Pages)
-  - [Stack](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/Data%20Structures.playground/Pages/Stack.xcplaygroundpage/Contents.swift)
-  - [Circular Buffer](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/Data%20Structures.playground/Pages/CircularBuffer.xcplaygroundpage/Contents.swift)
-  - [Queue](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/Data%20Structures.playground/Pages/Queue.xcplaygroundpage/Contents.swift)
-  - [Priority Queue](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Sources/PriorityQueue.swift)
-  - [Linked List](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/Data%20Structures.playground/Pages/Linked%20List.xcplaygroundpage/Contents.swift)
+- [Data Structures](https://github.com/jVirus/swift-algorithms-data-structs/tree/master/Data%20Structures.playground/Pages)
+  - [Stack](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/Stack.xcplaygroundpage/Contents.swift)
+  - [Circular Buffer](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/CircularBuffer.xcplaygroundpage/Contents.swift)
+  - [Queue](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/Queue.xcplaygroundpage/Contents.swift)
+  - [Priority Queue](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Sources/PriorityQueue.swift)
+  - [Linked List](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/Linked%20List.xcplaygroundpage/Contents.swift)
   - Doubly Linked List
   - Circular Linked List
-  - [Tree](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Pages/Tree.xcplaygroundpage/Contents.swift) 
-  - [Binary Tree](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Pages/BinaryTree.xcplaygroundpage/Contents.swift)
-  - [Binary Search Tree](https://github.com/jVirus/interviz/blob/master/Data%20Structures.playground/Pages/BinarySearchTree.xcplaygroundpage/Contents.swift)
+  - [Tree](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/Tree.xcplaygroundpage/Contents.swift) 
+  - [Binary Tree](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/BinaryTree.xcplaygroundpage/Contents.swift)
+  - [Binary Search Tree](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/BinarySearchTree.xcplaygroundpage/Contents.swift)
   - B-Tree
   - Splay Tree
-  - [Red-Black Tree](https://github.com/jVirus/interviz/blob/master/Data%20Structures.playground/Pages/Red-Black%20Tree.xcplaygroundpage/Contents.swift)
+  - [Red-Black Tree](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/Red-Black%20Tree.xcplaygroundpage/Contents.swift)
   - AVL Tree
   - Trie Tree
   - Radix Tree
   - Quad Tree
   - Octree
-  - [Heap](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Pages/Heap.xcplaygroundpage/Contents.swift) 
-  - [Graph](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Pages/Graph.xcplaygroundpage/Contents.swift)
+  - [Heap](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/Heap.xcplaygroundpage/Contents.swift) 
+  - [Graph](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/Graph.xcplaygroundpage/Contents.swift)
 - Algorithms
-  - [Sort](https://github.com/jVirus/iOS-Algo-Play-Book/tree/master/Sort.playground/Pages)
-    - [Insertion](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/Sort.playground/Pages/Insertion.xcplaygroundpage/Contents.swift)
-    - [Merge](https://github.com/jVirus/ios-algorithms-book/blob/master/Sort.playground/Pages/Merge.xcplaygroundpage/Contents.swift)
-    - [Quick (Hoare's Partitioning Scheme)](https://github.com/jVirus/ios-algorithms-book/blob/master/Sort.playground/Pages/Quick-Hoare-Scheme.xcplaygroundpage/Contents.swift)
-    - [Quick (Lomuto's Partitioning Scheme)](https://github.com/jVirus/ios-algorithms-book/blob/master/Sort.playground/Pages/Quick-Lomuto-Scheme.xcplaygroundpage/Contents.swift)
-    - [Bubble](https://github.com/jVirus/ios-algorithms-book/blob/master/Sort.playground/Pages/Bubble.xcplaygroundpage/Contents.swift)
-    - [Heap](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Sources/Heap.swift)
-    - [Shell](https://github.com/jVirus/ios-algorithms-book/blob/master/Sort.playground/Pages/Shell.xcplaygroundpage/Contents.swift)
-    - [Radix](https://github.com/jVirus/ios-algorithms-book/blob/master/Sort.playground/Pages/Radix.xcplaygroundpage/Contents.swift)
-  - [Search](https://github.com/jVirus/ios-algorithms-book/tree/master/Search.playground/Pages)
-    - [Binary](https://github.com/jVirus/ios-algorithms-book/blob/master/Search.playground/Pages/Binary.xcplaygroundpage/Contents.swift)
-    - [Linear](https://github.com/jVirus/ios-algorithms-book/blob/master/Search.playground/Pages/Linear.xcplaygroundpage/Contents.swift)
-    - [Heap](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Pages/Heap.xcplaygroundpage/Contents.swift)
-    - [Tree](https://github.com/jVirus/ios-algorithms-book/blob/master/Data%20Structures.playground/Pages/Tree.xcplaygroundpage/Contents.swift)
-  - [String Search](https://github.com/jVirus/ios-algorithms-book/tree/master/String%20Search.playground)
-    - [Brute-Force](https://github.com/jVirus/ios-algorithms-book/blob/master/String%20Search.playground/Contents.swift)
+  - [Sort](https://github.com/jVirus/swift-algorithms-data-structs/tree/master/Sort.playground/Pages)
+    - [Insertion](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Sort.playground/Pages/Insertion.xcplaygroundpage/Contents.swift)
+    - [Merge](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Sort.playground/Pages/Merge.xcplaygroundpage/Contents.swift)
+    - [Quick (Hoare's Partitioning Scheme)](https://github.com/jVirus/iswift-algorithms-data-structs/blob/master/Sort.playground/Pages/Quick-Hoare-Scheme.xcplaygroundpage/Contents.swift)
+    - [Quick (Lomuto's Partitioning Scheme)](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Sort.playground/Pages/Quick-Lomuto-Scheme.xcplaygroundpage/Contents.swift)
+    - [Bubble](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Sort.playground/Pages/Bubble.xcplaygroundpage/Contents.swift)
+    - [Heap](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Sources/Heap.swift)
+    - [Shell](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Sort.playground/Pages/Shell.xcplaygroundpage/Contents.swift)
+    - [Radix](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Sort.playground/Pages/Radix.xcplaygroundpage/Contents.swift)
+  - [Search](https://github.com/jVirus/swift-algorithms-data-structs/tree/master/Search.playground/Pages)
+    - [Binary](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Search.playground/Pages/Binary.xcplaygroundpage/Contents.swift)
+    - [Linear](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Search.playground/Pages/Linear.xcplaygroundpage/Contents.swift)
+    - [Heap](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/Heap.xcplaygroundpage/Contents.swift)
+    - [Tree](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/Tree.xcplaygroundpage/Contents.swift)
+  - [String Search](https://github.com/jVirus/swift-algorithms-data-structs/tree/master/String%20Search.playground)
+    - [Brute-Force](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/String%20Search.playground/Contents.swift)
     - Boyer-Moore
     - Rabin-Karp
     - Finite automation
