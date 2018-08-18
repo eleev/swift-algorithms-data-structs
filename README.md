@@ -36,7 +36,7 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
   - [Sort](https://github.com/jVirus/swift-algorithms-data-structs/tree/master/Sort.playground/Pages)
     - [Insertion](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Sort.playground/Pages/Insertion.xcplaygroundpage/Contents.swift)
     - [Merge](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Sort.playground/Pages/Merge.xcplaygroundpage/Contents.swift)
-    - [Quick (Hoare's Partitioning Scheme)](https://github.com/jVirus/iswift-algorithms-data-structs/blob/master/Sort.playground/Pages/Quick-Hoare-Scheme.xcplaygroundpage/Contents.swift)
+    - [Quick (Hoare's Partitioning Scheme)](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Sort.playground/Pages/Quick-Hoare-Scheme.xcplaygroundpage/Contents.swift)
     - [Quick (Lomuto's Partitioning Scheme)](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Sort.playground/Pages/Quick-Lomuto-Scheme.xcplaygroundpage/Contents.swift)
     - [Bubble](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Sort.playground/Pages/Bubble.xcplaygroundpage/Contents.swift)
     - [Heap](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Sources/Heap.swift)
