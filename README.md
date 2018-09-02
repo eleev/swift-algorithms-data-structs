@@ -1,15 +1,16 @@
-[![Language](https://img.shields.io/badge/language-swift-orange.svg)]()
+# swift-algorithms-data-structs [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+
+[![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 18/August/2018.**
+**Last Update: 02/September/2018.**
 
-# swift-algorithms-data-structs
-This is a `playground-based` project that contains examples of common `Algorithms` and `Data Structures` implemented using the latest stable version of `Swift`programming language. The development attempts to fully utilize `Standard Library` and `Protocol-Oriented` paradigm. The project provides interactive visualizations using `SpriteKit` and `SceneKit` frameworks (in development).
+The repository contains examples of common `Algorithms` and `Data Structures` implemented using the latest stable version of `Swift`programming language. The development attempts to fully utilize `Standard Library` and `Protocol-Oriented` paradigm. The project provides interactive visualizations using `SpriteKit` and `SceneKit` frameworks (in development).
 
-# About 
+# ✍️ About 
 Each major section will be wrapped into a separete `.playground` file, meaning that `data structures` and `algorithms` will be separeted for convenient management. :octocat:
 
-## Contnet 
+## 📚 Content 
 - [About](#about)
 - [Data Structures](https://github.com/jVirus/swift-algorithms-data-structs/tree/master/Data%20Structures.playground/Pages)
   - [Stack](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/Stack.xcplaygroundpage/Contents.swift)
@@ -61,7 +62,7 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
     - Depth-First Search (DFS)
     - Shortest Path (unweighted tree)
     
-# Interactive Visualizations
+# 📺 Interactive Visualizations
 The following list contains interactive visualizations that were implemented as part of the project. In majority of cases you can interact with a `data structure` or `algorithm` through a number of `UI` controlls. Visualizations are implemented using `SpriteKit` framework and are intended to explain the work of `data structures` and `algorithms` in a more highlevel way, which is a great way to learn especially if you are a beginner or you aren't familiar with something listed in the repository. 
 
 ## Stack 
@@ -75,8 +76,8 @@ Queue visualization is similar to Stack interactive visualization: it has two ma
 <img src="https://user-images.githubusercontent.com/5098753/43047859-99bdd2d6-8de6-11e8-9669-10afab9a5cc7.gif" width="350">
 
 
-#  Author 
+# 👨‍💻 Author 
 [Astemir Eleev](https://github.com/jVirus)
 
-# Licence 
+# 🔖 Licence 
 THE PROJECT IS UNDER [MIT](https://github.com/jVirus/iOS-Algo-Play-Book/blob/master/LICENSE) LICENCE 
