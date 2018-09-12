@@ -3,14 +3,16 @@
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 02/September/2018.**
+**Last Update: 12/September/2018.**
 
-The repository contains examples of common `Algorithms` and `Data Structures` implemented using the latest stable version of `Swift`programming language. The development attempts to fully utilize `Standard Library` and `Protocol-Oriented` paradigm. The project provides interactive visualizations using `SpriteKit` and `SceneKit` frameworks (in development).
+![](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/cover-algo-datastruct.png)
 
 # ✍️ About 
-Each major section will be wrapped into a separete `.playground` file, meaning that `data structures` and `algorithms` will be separeted for convenient management. :octocat:
+The repository contains examples of common `Algorithms` and `Data Structures` implemented using the latest stable version of `Swift`programming language. The development attempts to fully utilize `Standard Library` and `Protocol-Oriented` paradigm. The project provides interactive visualizations using `SpriteKit` and `SceneKit` frameworks (in development).
 
 ## 📚 Content 
+Each major section will be wrapped into a separete `.playground` file, meaning that `data structures` and `algorithms` will be separeted for convenient management. :octocat:
+
 - [About](#about)
 - [Data Structures](https://github.com/jVirus/swift-algorithms-data-structs/tree/master/Data%20Structures.playground/Pages)
   - [Stack](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/Stack.xcplaygroundpage/Contents.swift)
