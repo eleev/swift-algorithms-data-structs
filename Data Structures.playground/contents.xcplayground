@@ -14,5 +14,6 @@
         <page name='BinarySearchTree'/>
         <page name='Red-Black Tree'/>
         <page name='Dequeue'/>
+        <page name='DoublyLinkedList'/>
     </pages>
 </playground>
