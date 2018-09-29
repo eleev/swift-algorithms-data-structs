@@ -13,5 +13,6 @@
         <page name='BinaryTree'/>
         <page name='BinarySearchTree'/>
         <page name='Red-Black Tree'/>
+        <page name='Dequeue'/>
     </pages>
 </playground>
