@@ -21,7 +21,7 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
   - [Priority Queue](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Sources/PriorityQueue.swift)
   - [Dequeue](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/Dequeue.xcplaygroundpage/Contents.swift)
   - [Linked List](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/Linked%20List.xcplaygroundpage/Contents.swift)
-  - Doubly Linked List
+  - [Doubly Linked List](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/DoublyLinkedList.xcplaygroundpage/Contents.swift)
   - Circular Linked List
   - [Tree](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/Tree.xcplaygroundpage/Contents.swift) 
   - [Binary Tree](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/BinaryTree.xcplaygroundpage/Contents.swift)
