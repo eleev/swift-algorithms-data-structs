@@ -3,7 +3,7 @@
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 12/September/2018.**
+**Last Update: 29/September/2018.**
 
 ![](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/cover-algo-datastruct.png)
 
@@ -19,6 +19,7 @@ Each major section will be wrapped into a separete `.playground` file, meaning t
   - [Circular Buffer](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/CircularBuffer.xcplaygroundpage/Contents.swift)
   - [Queue](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/Queue.xcplaygroundpage/Contents.swift)
   - [Priority Queue](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Sources/PriorityQueue.swift)
+  - [Dequeue](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/Dequeue.xcplaygroundpage/Contents.swift)
   - [Linked List](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/Data%20Structures.playground/Pages/Linked%20List.xcplaygroundpage/Contents.swift)
   - Doubly Linked List
   - Circular Linked List
