@@ -3,9 +3,11 @@
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 29/September/2018.**
+**Last Update: 19/December/2018.**
 
 ![](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/cover-algo-datastruct.png)
+
+### If you like the project, please give it a star ⭐ It will show the creator your appreciation and help others to discover the repo.
 
 # ✍️ About 
 The repository contains examples of common `Algorithms` and `Data Structures` implemented using the latest stable version of `Swift`programming language. The development attempts to fully utilize `Standard Library` and `Protocol-Oriented` paradigm. The project provides interactive visualizations using `SpriteKit` and `SceneKit` frameworks (in development).
