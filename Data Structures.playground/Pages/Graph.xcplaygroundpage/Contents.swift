@@ -17,8 +17,10 @@ struct Edge<T: Equatable & Hashable> {
 
 // MARK: - Adds conformance to Hashable protocol
 extension Edge: Hashable {
-    var hashValue: Int {
-        return from.hashValue ^ to.hashValue ^ weight.hashValue
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(from.hashValue)
+        hasher.combine(to.hashValue)
+        hasher.combine(weight.hashValue)
     }
 }
 
@@ -54,6 +56,10 @@ struct Vertex<T: Equatable & Hashable> {
 extension Vertex: Hashable {
     var hashValue: Int {
         return data.hashValue ^ index.hashValue
+    }
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(data.hashValue)
+        hasher.combine(index.hashValue)
     }
 }
 

@@ -44,7 +44,7 @@ public struct PriorityQueue<T> where T: Comparable {
     }
 }
 
-public extension PriorityQueue where T: Equatable {
+extension PriorityQueue where T: Equatable {
     
     // MARK: - Methods
     
