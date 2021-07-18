@@ -1,9 +1,9 @@
 # swift-algorithms-data-structs [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-[![Language](https://img.shields.io/badge/language-Swift_5.0-orange.svg)]()
+[![Language](https://img.shields.io/badge/language-Swift_5.3-orange.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 27/April/2019.**
+**Last Update: 18/July/2021.**
 
 ![](https://github.com/jVirus/swift-algorithms-data-structs/blob/master/cover-algo-datastruct.png)
 
